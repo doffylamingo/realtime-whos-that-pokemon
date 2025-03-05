@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-import { Button } from "@/components/ui/button";
+import GameScreen from "@/components/game";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -8,8 +8,8 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="flex min-h-svh flex-col items-center justify-center">
-      <Button>Hello World</Button>
-    </div>
+    <main className="flex min-h-screen flex-col items-center justify-center bg-zinc-900 p-4 text-zinc-100">
+      <GameScreen />
+    </main>
   );
 }
